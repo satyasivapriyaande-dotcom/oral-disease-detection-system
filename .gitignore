@@ -1,88 +1,33 @@
-Backend git ignore file 
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+Frontend git ignore 
 
-# Environments
-.venv/
-venv/
-ENV/
-env/
-# For Poetry users
-.venv
-# For Conda users
-.env/
+# Generated .gitignore file for: JavaScript, React
+# Created with FOSSA's DevOps Tools
 
-# FastAPI / Project Specific
-.env
-.flaskenv
-*.log
-data/
-# If you use SQLite for local dev
-*.sqlite3
-*.db
+# JavaScript
+# Add JavaScript-specific ignores here
 
-# Distribution / packaging
-dist/
+# React
+node_modules/
 build/
-*.egg-info/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Unit test / coverage reports
-.pytest_cache/
-.coverage
-htmlcov/
-nosetests.xml
-coverage.xml
-
-# IDE - VS Code
-.vscode/
-# IDE - PyCharm
-.idea/
-
-# OS generated files
+# Common
 .DS_Store
 Thumbs.db
-
-
-*.h5
-dataset_cancer/
-dataset_disease/
-cnn_cancer_model.h5
-cnn_disease_model.h5
-cancer_model.h5
-cnn_cancer_model1.h5
-cnn_disease_model.h5
-cnn_disease_model1.h5
-
-__pycache__/
-
-# === Machine Learning Models (The heavy files) ===
-*.h5
-*.keras
-*.tflite
-*.pb
-*.json
-# Keep disease_classes.json if it is a config
-# but if it's a huge metadata file, ignore it.
-!disease_classes.json
-
-# === Python Environment & Cache ===
-
-__pycache__/
-*.py[cod]
-*$py.class
-.env
-venv/
-ENV/
-.venv/
-
-# === IDE Settings ===
-.vscode/
-.idea/
+*.log
+*.bak
+*.tmp
 *.swp
-*.swo
+*~
 
-# === OS Specific ===
-Thumbs.db
-DS_Store
+# IDE and editor generated files
+.idea/
+*.sublime-*
+
+# Local environment files
+.env
+.env.local
+.env.*.local
